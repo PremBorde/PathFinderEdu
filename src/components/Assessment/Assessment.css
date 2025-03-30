@@ -1,0 +1,20 @@
+/* Add this CSS for styling */
+.assessment-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.start-button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* Add other styles from previous implementation */ 

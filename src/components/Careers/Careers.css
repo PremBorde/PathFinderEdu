@@ -1,0 +1,47 @@
+.careers-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.career-streams {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stream-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.stream-card:hover {
+  transform: translateY(-5px);
+}
+
+.stream-card h3 {
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.stream-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stream-card ul li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.stream-card ul li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+} 
