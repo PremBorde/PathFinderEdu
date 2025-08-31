@@ -1,0 +1,21 @@
+{
+  "name": "pathfinder-edu",
+  "version": "1.0.0",
+  "description": "Educational Pathfinder Application",
+  "scripts": {
+    "frontend": "npm --prefix frontend start",
+    "backend": "npm --prefix backend run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.0",
+    "postcss-preset-env": "^10.2.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react-tsparticles": "^2.12.2",
+    "recharts": "^3.1.0",
+    "tsparticles": "^3.8.1"
+  }
+}

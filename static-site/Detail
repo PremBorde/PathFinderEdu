@@ -1,0 +1,138 @@
+I'll create a comprehensive technical documentation of the PathFinderEdu website's technology stack and components.
+
+# PathFinderEdu Website Technical Documentation
+
+## 1. Frontend Technologies
+- HTML5
+- CSS3
+- JavaScript
+- Tailwind CSS (via CDN)
+
+## 2. External Libraries & Dependencies
+### UI/UX Libraries
+- Font Awesome 6.0.0 (Icons)
+- AOS (Animate On Scroll) Library
+- SweetAlert2 (for enhanced alerts)
+- Google Fonts (Poppins font family)
+
+### CDN Links Used
+```html
+- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
+- https://unpkg.com/aos@next/dist/aos.css
+- https://cdn.jsdelivr.net/npm/@sweetalert2/theme-material-ui/material-ui.css
+- https://cdn.tailwindcss.com
+```
+
+## 3. Website Structure
+
+### Header Components
+- Navigation bar with logo
+- Responsive menu items
+- Login button
+
+### Main Sections
+1. **Hero Section**
+   - Welcome message
+   - CTA button
+
+2. **AI Career Path Recommender**
+   - Personality Assessment
+   - Skills Analysis
+   - Interest Mapping
+   - Assessment interface
+
+3. **Career Insights 2024**
+   - Statistical data visualization
+   - Stream-wise information (Science, Commerce, Arts)
+   - Placement rates and package details
+   - Trending roles
+
+4. **Popular Career Paths**
+   - Stream categorization
+   - Interactive cards
+   - Detailed guides for each stream
+
+5. **Scholarship Guide**
+   - Filter system
+   - Search functionality
+   - Scholarship database
+   - External portal links (e.g., MahaDBT)
+
+6. **Expert Guidance**
+   - Expert profiles
+   - Experience showcase
+   - Expertise tags
+   - Quote system
+
+7. **Success Stories**
+   - Case studies
+   - Animation effects (AOS)
+   - Journey timelines
+   - Milestone tracking
+
+8. **Resources Section**
+   - Study materials
+   - Mentorship information
+   - Job opportunities
+
+9. **Contact/Feedback Section**
+   - Form validation
+   - Email integration
+   - Message system
+
+### Footer Components
+- Quick links
+- Social media integration
+- Company information
+
+## 4. Interactive Features
+- Animated scroll effects
+- Interactive cards
+- Form validation
+- Filter systems
+- Modal windows
+- Responsive design elements
+
+## 5. File Structure
+```
+PathFinderEdu-main/
+├── index.html
+├── styles.css
+├── script.js
+├── login.html
+├── science.html
+├── commerce.html
+├── arts.html
+└── images/
+    ├── expert1.jpg
+    ├── expert2.jpg
+    ├── expert3.jpg
+    ├── success-story-1.jpg
+    └── success-story-2.jpg
+```
+
+## 6. Responsive Design Features
+- Mobile-friendly navigation
+- Flexible grid systems
+- Responsive images
+- Adaptive layouts
+- Media queries
+
+## 7. Performance Optimization
+- CDN usage for faster loading
+- Optimized image assets
+- External resource loading
+- Asynchronous script loading
+
+## 8. Security Features
+- External link protection (rel="noopener noreferrer")
+- Form validation
+- Secure CDN connections (HTTPS)
+
+## 9. Integration Points
+- Scholarship portal integration
+- Social media links
+- External resource connections
+- Login system
+
+This documentation provides a comprehensive overview of the technical aspects of the PathFinderEdu website. The site combines modern web technologies with user-friendly design principles to create an effective career guidance platform.
