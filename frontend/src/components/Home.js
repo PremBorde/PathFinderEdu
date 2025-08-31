@@ -1402,30 +1402,10 @@ const ExpertCard = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-      ${props => props.expertColor || '#4299e1'}10 0%, 
-      ${props => props.expertColor || '#4299e1'}05 50%, 
-      transparent 100%);
+    background: rgba(255, 255, 255, 0.05);
     opacity: 0;
     transition: all 0.4s ease;
     z-index: 0;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, 
-      ${props => props.expertColor || '#4299e1'}, 
-      ${props => props.expertColor || '#4299e1'}80, 
-      ${props => props.expertColor || '#4299e1'}60);
-    border-radius: 22px;
-    opacity: 0;
-    transition: all 0.4s ease;
-    z-index: -1;
   }
 
   & > * {
@@ -1434,17 +1414,12 @@ const ExpertCard = styled.div`
   }
 
   &:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-color: ${props => props.expertColor || '#4299e1'};
 
     &::before {
       opacity: 1;
-    }
-
-    &::after {
-      opacity: 1;
-      animation: borderGlow 2s ease-in-out infinite alternate;
     }
   }
 
@@ -1492,74 +1467,21 @@ const ExpertImage = styled.div`
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: conic-gradient(
-      ${props => props.color || '#4299e1'}, 
-      ${props => props.color || '#4299e1'}80, 
-      ${props => props.color || '#4299e1'}40, 
-      ${props => props.color || '#4299e1'}
-    );
-    border-radius: 65px;
-    opacity: 0;
-    transition: all 0.4s ease;
-    animation: rotate 3s linear infinite;
-    z-index: -1;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    border: 2px solid ${props => props.color || '#4299e1'};
-    border-radius: 63px;
-    opacity: 0.3;
-    pointer-events: none;
-    transition: all 0.4s ease;
-  }
-
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    border: none;
-    position: relative;
-    z-index: 1;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: brightness(1) contrast(1) saturate(1);
+    border: 2px solid ${props => props.color || '#4299e1'};
+    transition: all 0.3s ease;
   }
 
-  &:hover {
-    &::before {
-      opacity: 1;
-    }
-
-    &::after {
-      opacity: 0.8;
-      transform: scale(1.1);
-      box-shadow: 0 0 20px ${props => props.color || '#4299e1'}40;
-    }
-
-    img {
-      filter: brightness(1.1) contrast(1.1) saturate(1.2);
-      transform: scale(1.05);
-    }
+  &:hover img {
+    transform: translateY(-3px);
   }
 
-  @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
+
 `;
 
 const ExpertName = styled.h3`
